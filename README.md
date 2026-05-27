@@ -43,7 +43,8 @@ gcloud run deploy support-agent-proxy --source . --region us-east1 --min-instanc
 
 #### Connect Frontend to Backend
 1. After the `gcloud run deploy` command finishes, copy the **Service URL** from the output (e.g., `https://support-agent-proxy-12345.us-east1.run.app`).
-2. Open `support-frontend/.env` and update `REACT_APP_AGENT_SERVER_URL` with that URL.
+2. Make sure that you have copied over `.env.example` to a `.env` file, in the dir `support-frontend/`
+3. Open `support-frontend/.env` and update `REACT_APP_AGENT_SERVER_URL` with that URL.
 
 #### Launch the Front End
 1. Navigate to `support-frontend` directory.
