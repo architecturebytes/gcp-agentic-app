@@ -11,7 +11,6 @@ This is an Agentic Application comprising:
 
 1. Clone the repository.
 2. Ensure you have the required tools (`python`, `uv`, `gcloud`, `agents-cli`, `npm`) installed.
-3. Configure your environment variables as indicated by the `.env.example` files in each project.
 
 ## GCP Project
 Make sure that you have a Project in Google Cloud Platform that you can use.<br>
