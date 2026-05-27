@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+build/
+
+# IDE/System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets/Sensitive
+.env
+*.pem
+
+# Agent/Proxy artifacts
+**/app/.adk/
+**/app/app/.adk/
