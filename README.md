@@ -1,4 +1,6 @@
-# TechX Project
+# Agentic Customer Support Solution - Agents CLI Tutorial
+
+YouTube Ref: https://www.youtube.com/watch?v=jCAilNutWu8
 
 This is an Agentic Application comprising:
 - `support-agent`: The core ADK agent.
@@ -11,6 +13,9 @@ This is an Agentic Application comprising:
 2. Ensure you have the required tools (`python`, `uv`, `gcloud`, `agents-cli`, `npm`) installed.
 3. Configure your environment variables as indicated by the `.env.example` files in each project.
 
+## GCP Project
+Make sure that you have a Project in Google Cloud Platform that you can use.<br>
+gcloud should be configured with this project as default.
 
 ## Deployment Guide
 
