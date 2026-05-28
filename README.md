@@ -19,6 +19,8 @@ gcloud on your desktop (local dev environment) should be configured with this pr
 ### Required GCP APIs
 You must enable the following APIs in your Google Cloud Project (via Console or `gcloud`):
 
+<small>
+
 | Console Service Name | `gcloud` API ID |
 | :--- | :--- |
 | Vertex AI API | `aiplatform.googleapis.com` |
@@ -33,6 +35,7 @@ You must enable the following APIs in your Google Cloud Project (via Console or 
 ```bash
 gcloud services enable aiplatform.googleapis.com run.googleapis.com artifactregistry.googleapis.com cloudbuild.googleapis.com storage.googleapis.com iam.googleapis.com cloudresourcemanager.googleapis.com
 ```
+</small>
 
 ## Deployment Guide
 
