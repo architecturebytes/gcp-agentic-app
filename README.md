@@ -7,12 +7,12 @@ This is an Agentic Application comprising:
 - `support-agent-proxy`: Proxy service for the agent (for `gcloud run`).
 - `support-frontend`: A React-based UI.
 
-## $\color{cyan}\text{Setup}$
+## SETUP
 
 1. Clone the repository.
 2. Ensure you have the required tools (`python`, `uv`, `gcloud`, `agents-cli`, `npm`) installed.
 
-## $\color{cyan}\text{GCP Project}$
+## GCP PROJECT
 Make sure that you have a Project in Google Cloud Platform that you can use.<br>
 gcloud on your desktop (local dev environment) should be configured with this project as default.
 
@@ -32,7 +32,7 @@ Enable these in your GCP Project (via Console or CLI):
 gcloud services enable aiplatform.googleapis.com run.googleapis.com artifactregistry.googleapis.com cloudbuild.googleapis.com storage.googleapis.com iam.googleapis.com cloudresourcemanager.googleapis.com
 ```
 
-## $\color{cyan}\text{Deployment Guide}$
+## DEPLOYMENT GUIDE
 
 ### 1. Support Agent (`support-agent`)
 
