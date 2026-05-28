@@ -19,13 +19,13 @@ gcloud on your desktop (local dev environment) should be configured with this pr
 ### Required GCP APIs
 Enable these in your GCP Project (via Console or CLI):
 
-- **Vertex AI API**: `aiplatform.googleapis.com`
-- **Cloud Run Admin API**: `run.googleapis.com`
-- **Artifact Registry API**: `artifactregistry.googleapis.com`
-- **Cloud Build API**: `cloudbuild.googleapis.com`
-- **Cloud Storage API**: `storage.googleapis.com`
-- **IAM API**: `iam.googleapis.com`
-- **Cloud Resource Manager API**: `cloudresourcemanager.googleapis.com`
+- <sub>**Vertex AI API**: `aiplatform.googleapis.com`</sub>
+- <sub>**Cloud Run Admin API**: `run.googleapis.com`</sub>
+- <sub>**Artifact Registry API**: `artifactregistry.googleapis.com`</sub>
+- <sub>**Cloud Build API**: `cloudbuild.googleapis.com`</sub>
+- <sub>**Cloud Storage API**: `storage.googleapis.com`</sub>
+- <sub>**IAM API**: `iam.googleapis.com`</sub>
+- <sub>**Cloud Resource Manager API**: `cloudresourcemanager.googleapis.com`</sub>
 
 *Enable via CLI:*
 ```bash
