@@ -11,11 +11,28 @@ This is an Agentic Application comprising:
 
 1. Clone the repository.
 2. Ensure you have the required tools (`python`, `uv`, `gcloud`, `agents-cli`, `npm`) installed.
-3. Configure your environment variables as indicated by the `.env.example` files in each project.
 
 ## GCP Project
 Make sure that you have a Project in Google Cloud Platform that you can use.<br>
-gcloud should be configured with this project as default.
+gcloud on your desktop (local dev environment) should be configured with this project as default.
+
+### Required GCP APIs
+You must enable the following APIs in your Google Cloud Project (via Console or `gcloud`):
+
+| Console Service Name | `gcloud` API ID |
+| :--- | :--- |
+| Vertex AI API | `aiplatform.googleapis.com` |
+| Cloud Run Admin API | `run.googleapis.com` |
+| Artifact Registry API | `artifactregistry.googleapis.com` |
+| Cloud Build API | `cloudbuild.googleapis.com` |
+| Cloud Storage API | `storage.googleapis.com` |
+| Identity and Access Management (IAM) API | `iam.googleapis.com` |
+| Cloud Resource Manager API | `cloudresourcemanager.googleapis.com` |
+
+*To enable via CLI:*
+```bash
+gcloud services enable aiplatform.googleapis.com run.googleapis.com artifactregistry.googleapis.com cloudbuild.googleapis.com storage.googleapis.com iam.googleapis.com cloudresourcemanager.googleapis.com
+```
 
 ## Deployment Guide
 
@@ -44,11 +61,10 @@ gcloud run deploy support-agent-proxy --source . --region us-east1 --min-instanc
 
 #### Connect Frontend to Backend
 1. After the `gcloud run deploy` command finishes, copy the **Service URL** from the output (e.g., `https://support-agent-proxy-12345.us-east1.run.app`).
-2. Open `support-frontend/.env` and update `REACT_APP_AGENT_SERVER_URL` with that URL.
+2. Make sure that you have copied over `.env.example` to a `.env` file, in the dir `support-frontend/`
+3. Open `support-frontend/.env` and update `REACT_APP_AGENT_SERVER_URL` with that Service URL.
 
 #### Launch the Front End
 1. Navigate to `support-frontend` directory.
 2. Install dependencies: `npm install`
 3. Run locally: `npm start`
-
-
