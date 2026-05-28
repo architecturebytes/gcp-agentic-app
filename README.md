@@ -38,8 +38,9 @@ gcloud services enable aiplatform.googleapis.com run.googleapis.com artifactregi
 
 #### Prepare Agent for Deployment
 1. Navigate to `support-agent` directory.
-2. Enhance for deployment: `agents-cli scaffold enhance . --deployment-target agent_runtime`
-3. Install dependencies: `agents-cli install`
+2. Enhance for deployment: `agents-cli scaffold enhance . --deployment-target agent_runtime`<br>
+   <sub>(Note: This step prepares the necessary configuration and manifest files for deployment. These configurations may already exist if you initialized the agent using agents-cli create -i and provided all required details about your deployment target. Therefore, running this command may be optional/conditional depending on your setup.)</sub>
+4. Install dependencies: `agents-cli install`
 
 #### Deploy to Agent Runtime
 1. Deploy: `agents-cli deploy`
